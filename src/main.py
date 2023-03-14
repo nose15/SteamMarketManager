@@ -1,4 +1,4 @@
-from steamAPIwrapper.steamAPI import get_user_inventory, get_item_listing_price
+from steamAPIwrapper.steamAPI import get_user_inventory
 
 
 def main():
