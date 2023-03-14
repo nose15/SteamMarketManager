@@ -1,4 +1,6 @@
 *.xlsx
 *.meta
 *.xml
-
+.gitignore
+.idea
+*.iml
