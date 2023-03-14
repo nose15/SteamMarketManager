@@ -1,4 +1,4 @@
-from steamAPIwrapper import inventoryMethods, marketMethods
+from src.steamAPIwrapper import inventoryMethods, marketMethods
 
 
 def get_user_inventory(user_id: str, app_id: int) -> dict:

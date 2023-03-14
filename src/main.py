@@ -1,4 +1,4 @@
-from steamAPIwrapper.steamAPI import get_user_inventory
+from src.steamAPIwrapper.steamAPI import get_user_inventory
 
 
 def main():

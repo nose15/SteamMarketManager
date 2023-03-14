@@ -14,7 +14,7 @@ def get_inventory_count(user_id, app_id):
 
     count = 0
 
-    with open("steamAPIwrapper/exampleFiles/exampleCountRead.json", "r") as f:
+    with open("src/steamAPIwrapper/exampleFiles/exampleCountRead.json", "r") as f:
         line = f.read()
         data_dict = json.loads(line)
         count = data_dict["total_inventory_count"]
@@ -26,7 +26,7 @@ def get_inventory_data(user_id, app_id, count):
     url = f"http://steamcommunity.com/inventory/{user_id}/{app_id}/" \
           f"2?l=english&count={count}"
 
-    with open("steamAPIwrapper/exampleFiles/exampleInventoryDownload.json", "r", encoding="utf8") as f:
+    with open("src/steamAPIwrapper/exampleFiles/exampleInventoryDownload.json", "r", encoding="utf8") as f:
         lines = f.read()
         data_dict = json.loads(lines)
 
